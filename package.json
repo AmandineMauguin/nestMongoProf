@@ -32,6 +32,7 @@
     "@nestjs/passport": "^7.1.5",
     "@nestjs/platform-express": "^7.6.15",
     "@types/bcrypt": "^3.0.1",
+    "@types/multer": "^1.4.5",
     "@types/passport-jwt": "^3.0.5",
     "bcrypt": "^5.0.1",
     "mongoose": "^5.12.7",
@@ -80,7 +81,7 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "engines":{
-    "node":"14.16.0"
+  "engines": {
+    "node": "14.16.0"
   }
 }
