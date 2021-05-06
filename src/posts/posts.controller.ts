@@ -23,11 +23,12 @@ import { diskStorage } from 'multer';
 import { extname } from 'path';
 import { fileURLToPath } from 'node:url';
 
-@UseGuards(AuthGuard())
+
 @Controller('posts')
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
 
+  @UseGuards(AuthGuard())
   @Post()
   create(@Body() createPostDto: CreatePostDto, @Req() request) {
     createPostDto.author = request.user._id;
